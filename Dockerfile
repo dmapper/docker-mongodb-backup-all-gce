@@ -10,9 +10,9 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927 && \
   apt-get update && \
   apt-get install -y mongodb-org
 
-RUN add-apt-repository ppa:fkrull/deadsnakes && \
+RUN add-apt-repository ppa:jonathonf/python-3.6 && \
   apt-get update && \
-  apt-get install -y python3.5 mercurial && \
+  apt-get install -y python3.6 mercurial && \
   apt-get install -y python-pip
 
 RUN pip install -e hg+https://bitbucket.org/dbenamy/devcron#egg=devcron
