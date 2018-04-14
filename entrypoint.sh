@@ -20,7 +20,7 @@ default_api_version = 1
 default_project_id = $gs_project_id
 EOF
 
-echo "$TIME /mongodb-backup.sh" > /cron/"$DATABASE"
+echo "$TIME /mongodb-backup.sh" > /cron/"$FOLDER_NAME"
 devcron.py /cron/"$FOLDER_NAME"
 
 fg
