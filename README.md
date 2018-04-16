@@ -19,8 +19,8 @@ The **Secret Key** of Interoperability session.
 #### BUCKET
 The bucket name, need create the bucket on Google Cloud Console before.
 
-#### FOLDER
-The folder name where the dump will be stored
+#### MONGO_DATABASES
+The database names to backup, the file will be saved at gs://bucket/database_name_date.tar.gz.
 
 #### MONGO_HOST
 The IP or domain of your Mongodb server, with the port (127.0.0.1:27017).
