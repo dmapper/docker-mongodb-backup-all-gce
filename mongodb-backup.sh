@@ -35,4 +35,5 @@ rm -rf $BACKUP_PATH*
 
 done
 
+echo "================"
 echo "Copying finished"
